@@ -146,9 +146,9 @@ function setpaths()
     export ANDROID_EABI_TOOLCHAIN=
     local ARCH=$(get_build_var TARGET_ARCH)
     case $ARCH in
-        x86) toolchaindir=x86/i686-android-linux-4.4.3/bin
+        x86) toolchaindir=x86/i686-linux-android-4.7.3/bin
             ;;
-        arm) toolchaindir=arm/arm-linux-androideabi-4.6/bin
+        arm) toolchaindir=arm/arm-linux-androideabi-4.7.3/bin
             ;;
         *)
             echo "Can't find toolchain for unknown architecture: $ARCH"
@@ -163,9 +163,9 @@ function setpaths()
 
     export ARM_EABI_TOOLCHAIN=
     case $ARCH in
-        x86) toolchaindir=x86/i686-eabi-4.4.3/bin
+        x86) toolchaindir=x86/i686-linux-android-4.7.3/bin
             ;;
-        arm) toolchaindir=arm/arm-eabi-4.6/bin
+        arm) toolchaindir=arm/arm-eabi-4.7.3/bin
             ;;
         *)
             echo "Can't find toolchain for unknown architecture: $ARCH"
